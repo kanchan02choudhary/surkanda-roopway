@@ -1,0 +1,29 @@
+# Render.com Blueprint — "New + > Blueprint" and point it at your repo (rootDir = backend)
+services:
+  - type: web
+    name: surkanda-ropeway-api
+    runtime: node
+    rootDir: backend
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - { key: NODE_ENV, value: production }
+      - { key: MONGODB_URI, sync: false }
+      - { key: FRONTEND_URL, sync: false }
+      - { key: ADMIN_API_KEY, sync: false }
+      - { key: RAZORPAY_KEY_ID, sync: false }
+      - { key: RAZORPAY_KEY_SECRET, sync: false }
+      - { key: RAZORPAY_WEBHOOK_SECRET, sync: false }
+      - { key: RESEND_API_KEY, sync: false }
+      - { key: EMAIL_FROM, sync: false }
+      - { key: CONTACT_TO, sync: false }
+      - { key: STAFF_NOTIFY_EMAIL, sync: false }
+      - { key: TICKET_PRICE_PAISE, value: "22500" }
+      - { key: GST_PERCENT, value: "5" }
+      - { key: MAX_TICKETS_PER_BOOKING, value: "9" }
+      - { key: BOOKING_MAX_ADVANCE_DAYS, value: "90" }
+      - { key: TICKET_ITEM_NAME, value: "Adult 2 way" }
+      - { key: CANCELLATION_CUTOFF_HOURS, value: "24" }
+      - { key: REFUND_PERCENT, value: "100" }
