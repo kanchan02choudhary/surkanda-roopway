@@ -1,8 +1,8 @@
 export const SITE = {
   name: 'Surkanda Devi Ropeway',
   company: 'Surkanda Devi Ropeway Project Pvt. Ltd.',
-  phone: '+91 98710 04053',
-  phoneRaw: '919871004053',
+  phone: '+91 70607 06045',
+  phoneRaw: '917060706045',
   email: 'info@surkandadevi.com',
   address: 'Kaddukhal, Dhanaulti, Tehri Garhwal, Uttarakhand – 249145',
   hours: '7:00 AM – 5:00 PM',
